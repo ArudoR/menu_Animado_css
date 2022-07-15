@@ -10,8 +10,52 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.nav{
+    background: #293241;
+    height: 80px;
+    color: #fff;
+}
+
+.nav__container{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.nav__menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+}
+
+.nav__item{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__item::after{
+    content: '';
+    display: block;
+    background: #fff;
+    width: 90%;
+    height: 3px;
+    margin-top: 3px;
+}
+
 .nav__input:checked + .nav__menu{
     
+}
+
+.nav__label, .nav__input{
+    display: none;
 }
 
 .nav__menu{

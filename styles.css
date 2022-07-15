@@ -57,10 +57,6 @@ body{
     --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.nav__input:checked + .nav__menu{
-    
-}
-
 .nav__label, .nav__input{
     display: none;
 }
@@ -82,5 +78,11 @@ body{
         justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+
+    .nav__input:checked + .nav__menu{
+        clip-path: circle(100% at center);
     }
 }
